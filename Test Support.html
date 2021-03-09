@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Support  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Test Support" class="dashAnchor"></a>
+    <a title="Test Support  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Fluxor Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Test Support  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Test Support</h1>
+            <p>Every part of an application using Fluxor is highly testable. The separation of the <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> (instructions), <code><a href="Classes/Selector.html">Selector</a></code> (reading), <code><a href="Structs/Reducer.html">Reducer</a></code> (mutating) and <code><a href="Enums/Effect.html">Effect</a></code> (asynchronous) make each part decoupled, testable and easier to grasp.</p>
+
+<p>But to help out when testing components using Fluxor or asynchronous <code><a href="Enums/Effect.html">Effect</a></code>s, Fluxor comes with a separate package (<strong>FluxorTestSupport</strong>) with a <code><a href="Classes/MockStore.html">MockStore</a></code>, <code><a href="Classes/TestInterceptor.html">TestInterceptor</a></code> and an <code><a href="Structs/EffectRunner.html">EffectRunner</a></code> to make <code><a href="Enums/Effect.html">Effect</a></code>s run syncronously.</p>
+
+<p>FluxorTestSupport should only be linked in unit testing targets.</p>
+<h2 id='mocking-out-the-code-store-code' class='heading'>Mocking out the <code><a href="Classes/Store.html">Store</a></code></h2>
+
+<p>The <code><a href="Classes/MockStore.html">MockStore</a></code> can be used to mock the <code><a href="Classes/Store.html">Store</a></code> being used.</p>
+<h3 id='setting-a-specific-code-state-code' class='heading'>Setting a specific <code>State</code></h3>
+
+<p>With <code><a href="Classes/MockStore.html">MockStore</a></code> it is possible, from a test, to set a specific <code>State</code> to help test a specific scenario.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FluxorTestSupport</span>
+<span class="kd">import</span> <span class="kt">XCTest</span>
+
+<span class="kd">class</span> <span class="kt">GreetingView</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">testGreeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">mockStore</span> <span class="o">=</span> <span class="kt">MockStore</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">())</span>
+        <span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">GreetingView</span><span class="p">(</span><span class="nv">store</span><span class="p">:</span> <span class="n">mockStore</span><span class="p">)</span>
+        <span class="kt">XCTAssert</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+        <span class="n">mockStore</span><span class="o">.</span><span class="nf">setState</span><span class="p">(</span><span class="kt">AppState</span><span class="p">(</span><span class="nv">greeting</span><span class="p">:</span> <span class="s">"Hi Bob!"</span><span class="p">))</span>
+        <span class="kt">XCTAssert</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='overriding-code-selectors-code' class='heading'>Overriding <code>Selectors</code></h3>
+
+<p>The <code><a href="Classes/MockStore.html">MockStore</a></code> can be used to override <code><a href="Classes/Selector.html">Selector</a></code>s so that they always return a specific value.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FluxorTestSupport</span>
+<span class="kd">import</span> <span class="kt">XCTest</span>
+
+<span class="kd">class</span> <span class="kt">GreetingViewTests</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">testGreeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">greeting</span> <span class="o">=</span> <span class="s">"Hi Bob!"</span>
+        <span class="k">let</span> <span class="nv">mockStore</span> <span class="o">=</span> <span class="kt">MockStore</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">(</span><span class="nv">greeting</span><span class="p">:</span> <span class="s">"Hi Steve!"</span><span class="p">))</span>
+        <span class="n">mockStore</span><span class="o">.</span><span class="nf">overrideSelector</span><span class="p">(</span><span class="kt">Selectors</span><span class="o">.</span><span class="n">getGreeting</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="n">greeting</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">GreetingView</span><span class="p">(</span><span class="nv">store</span><span class="p">:</span> <span class="n">mockStore</span><span class="p">)</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">view</span><span class="o">.</span><span class="n">greeting</span><span class="p">,</span> <span class="n">greeting</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='intercepting-state-changes' class='heading'>Intercepting state changes</h2>
+
+<p><strong>NOTE:</strong> This is built into the <code><a href="Classes/MockStore.html">MockStore</a></code>.</p>
+
+<p>The <code><a href="Classes/TestInterceptor.html">TestInterceptor</a></code> can be registered on the <code><a href="Classes/Store.html">Store</a></code>. When registered it gets all <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s dispatched and state changes. Everything it intercepts gets saved in an array in the order received. This can be used to assert which <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched in a test.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FluxorTestSupport</span>
+<span class="kd">import</span> <span class="kt">XCTest</span>
+
+<span class="kd">class</span> <span class="kt">GreetingViewTests</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">testGreeting</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">testInterceptor</span> <span class="o">=</span> <span class="kt">TestInterceptor</span><span class="o">&lt;</span><span class="kt">AppState</span><span class="o">&gt;</span><span class="p">()</span>
+        <span class="k">let</span> <span class="nv">store</span> <span class="o">=</span> <span class="kt">Store</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">())</span>
+        <span class="n">store</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">interceptor</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">testInterceptor</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">view</span> <span class="o">=</span> <span class="kt">GreetingView</span><span class="p">(</span><span class="nv">store</span><span class="p">:</span> <span class="n">store</span><span class="p">)</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">testInteceptor</span><span class="o">.</span><span class="n">stateChanges</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">view</span><span class="o">.</span><span class="nf">updateGreeting</span><span class="p">()</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">testInteceptor</span><span class="o">.</span><span class="n">stateChanges</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The <code><a href="Classes/MockStore.html">MockStore</a></code> uses this internally behind the <code>stateChanges</code> property.</p>
+<h2 id='running-an-code-effect-code' class='heading'>Running an <code><a href="Enums/Effect.html">Effect</a></code></h2>
+
+<p>An <code><a href="Enums/Effect.html">Effect</a></code> is inherently asynchronous, so in order to test it in a synchronous test, without a lot of boilerplate code, FluxorTestSupport comes with an <code><a href="Structs/EffectRunner.html">EffectRunner</a></code> that executes the <code><a href="Enums/Effect.html">Effect</a></code> with a specific <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> and <code>Environment</code>. It is possible to run both <code>.dispatchingOne</code>,<code>.dispatchingMultiple</code> and <code>.nonDispatching</code>, but the result will be different.</p>
+
+<p>When running <code>.dispatchingOne</code> and<code>.dispatchingMultiple</code>, it is possible to specify the expected number of dispatched <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s and the dispatched <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s will also be returned.</p>
+
+<p>When running <code>.nonDispatching</code>, nothing is awaited and nothing is returned.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FluxorTestSupport</span>
+<span class="kd">import</span> <span class="kt">XCTest</span>
+
+<span class="kd">class</span> <span class="kt">SettingsEffectsTests</span><span class="p">:</span> <span class="kt">XCTestCase</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">testSetBackground</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">effects</span> <span class="o">=</span> <span class="kt">SettingsEffects</span><span class="p">()</span>
+        <span class="k">let</span> <span class="nv">action</span> <span class="o">=</span> <span class="kt">Actions</span><span class="o">.</span><span class="nf">setBackgroundColor</span><span class="p">(</span><span class="nv">payload</span><span class="p">:</span> <span class="o">.</span><span class="n">red</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">EffectRunner</span><span class="o">.</span><span class="nf">run</span><span class="p">(</span><span class="n">effects</span><span class="o">.</span><span class="n">setBackgroundColor</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="n">action</span><span class="p">)</span><span class="o">!</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="kt">XCTAssertEqual</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="kt">Actions</span><span class="o">.</span><span class="nf">hideColorPicker</span><span class="p">())</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17FluxorTestSupport9MockStoreC"></a>
+                    <a name="//apple_ref/swift/Class/MockStore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17FluxorTestSupport9MockStoreC">MockStore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A <code>MockStore</code> is intended to be used in unit tests where you want to observe
+which <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched and manipulate the <code>State</code> and <code><a href="Classes/Selector.html">Selector</a></code>s.</p>
+
+                        <a href="Classes/MockStore.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MockStore</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Classes/Store.html">Store</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17FluxorTestSupport12EffectRunnerV"></a>
+                    <a name="//apple_ref/swift/Struct/EffectRunner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17FluxorTestSupport12EffectRunnerV">EffectRunner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>EffectRunner</code> can be used to run <code><a href="Enums/Effect.html">Effect</a></code>s with a specified <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>.</p>
+
+                        <a href="Structs/EffectRunner.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">EffectRunner</span><span class="o">&lt;</span><span class="kt">Environment</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17FluxorTestSupport0B11InterceptorC"></a>
+                    <a name="//apple_ref/swift/Class/TestInterceptor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17FluxorTestSupport0B11InterceptorC">TestInterceptor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code><a href="Protocols/Interceptor.html">Interceptor</a></code> to use in unit tests, to assert specific <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched.</p>
+
+                        <a href="Classes/TestInterceptor.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">TestInterceptor</span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="Protocols/Interceptor.html">Interceptor</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

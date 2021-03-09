@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reducers  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Reducers" class="dashAnchor"></a>
+    <a title="Reducers  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Fluxor Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Reducers  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Reducers</h1>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor7ReducerV"></a>
+                    <a name="//apple_ref/swift/Struct/Reducer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor7ReducerV">Reducer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type which takes a <code>State</code> and <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> returns a new <code>State</code>.</p>
+
+                        <a href="Structs/Reducer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Reducer</span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8ReduceOnV"></a>
+                    <a name="//apple_ref/swift/Struct/ReduceOn" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8ReduceOnV">ReduceOn</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A part of a <code><a href="Structs/Reducer.html">Reducer</a></code> which only gets triggered on certain <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s or <code><a href="Structs/ActionTemplate.html">ActionTemplate</a></code>s.</p>
+
+                        <a href="Structs/ReduceOn.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReduceOn</span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

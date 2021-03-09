@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ActionTemplate Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/ActionTemplate" class="dashAnchor"></a>
+    <a title="ActionTemplate Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Fluxor Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ActionTemplate Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ActionTemplate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ActionTemplate</span><span class="o">&lt;</span><span class="kt">Payload</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A template for creating <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s.</p>
+
+<p>The template can have a <code>Payload</code>type which is used when creating an actual <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> from the template.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateV2id11payloadTypeACyxGSS_xmtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:payloadType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateV2id11payloadTypeACyxGSS_xmtcfc">init(id:<wbr>payloadType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an <code>ActionTemplate</code> with the given <code>payloadType</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">payloadType</span><span class="p">:</span> <span class="kt">Payload</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the <code>ActionTemplate</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>payloadType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of the <code>Payload</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateV06createB07payloadAA09AnonymousB0VyxGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/createAction(payload:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateV06createB07payloadAA09AnonymousB0VyxGx_tF">createAction(payload:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with the <code>ActionTemplate</code>s <code>id</code> and the given <code>payload</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">createAction</span><span class="p">(</span><span class="nv">payload</span><span class="p">:</span> <span class="kt">Payload</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnonymousAction.html">AnonymousAction</a></span><span class="o">&lt;</span><span class="kt">Payload</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>payload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payload to create the <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateV14callAsFunction7payloadAA09AnonymousB0VyxGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/callAsFunction(payload:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateV14callAsFunction7payloadAA09AnonymousB0VyxGx_tF">callAsFunction(payload:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with the <code>ActionTemplate</code>s <code>id</code> and the given <code>payload</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">callAsFunction</span><span class="p">(</span><span class="nv">payload</span><span class="p">:</span> <span class="kt">Payload</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnonymousAction.html">AnonymousAction</a></span><span class="o">&lt;</span><span class="kt">Payload</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>payload</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The payload to create the <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Payload%60%20%3D%3D%20%60Void%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Payload` == `Void`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Payload%60%20%3D%3D%20%60Void%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Payload</code> == <code>Void</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateVAAytRszlE2idACyytGSS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateVAAytRszlE2idACyytGSS_tcfc">init(id:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes an <code>ActionTemplate</code> with no <code>Payload</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The identifier for the <code>ActionTemplate</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateVAAytRszlE06createB0AA09AnonymousB0VyytGyF"></a>
+                    <a name="//apple_ref/swift/Method/createAction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateVAAytRszlE06createB0AA09AnonymousB0VyytGyF">createAction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with the <code>ActionTemplate</code>s <code>id</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createAction</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnonymousAction.html">AnonymousAction</a></span><span class="o">&lt;</span><span class="kt">Payload</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor14ActionTemplateVAAytRszlE14callAsFunctionAA09AnonymousB0VyytGyF"></a>
+                    <a name="//apple_ref/swift/Method/callAsFunction()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor14ActionTemplateVAAytRszlE14callAsFunctionAA09AnonymousB0VyytGyF">callAsFunction()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code><a href="../Structs/AnonymousAction.html">AnonymousAction</a></code> with the <code>ActionTemplate</code>s <code>id</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">callAsFunction</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/AnonymousAction.html">AnonymousAction</a></span><span class="o">&lt;</span><span class="kt">Payload</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

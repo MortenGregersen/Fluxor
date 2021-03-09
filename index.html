@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fluxor  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="Fluxor  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Fluxor Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Fluxor  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+    <br />
+    <img src="https://raw.githubusercontent.com/FluxorOrg/Fluxor/master/Assets/Fluxor-logo.png" width="400" max-width="90%" alt="Fluxor" />
+</p>
+
+<p align="center">
+    <b>Unidirectional Data Flow in Swift - inspired by <a href="https://redux.js.org">Redux</a> and <a href="https://ngrx.io">NgRx</a>.</b><br />
+    Based on <a href="https://developer.apple.com/documentation/combine">Combine</a> - ideal for use with <a href="https://developer.apple.com/documentation/swiftui">SwiftUI</a>.<br />
+    <br />
+    <img src="https://img.shields.io/badge/Swift-5.2-brightgreen.svg" alt="Swift version" />
+    <a href="https://swift.org/package-manager">
+        <img src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg?style=flat" alt="Swift PM" />
+    </a>
+    <img src="https://img.shields.io/badge/platforms-Mac+iOS-brightgreen.svg?style=flat" alt="Platforms" />
+    <a href="https://twitter.com/mortengregersen">
+        <img src="https://img.shields.io/badge/twitter-@mortengregersen-blue.svg?style=flat" alt="Twitter" />
+    </a>
+    <br />
+    <img src="https://github.com/FluxorOrg/Fluxor/workflows/CI/badge.svg" alt="CI" />
+    <a href="https://fluxor.dev">
+        <img src="https://raw.githubusercontent.com/FluxorOrg/Fluxor/gh-pages/badge.svg" alt="Documentation" />
+    </a>
+    <a href="https://codeclimate.com/github/FluxorOrg/Fluxor/maintainability">
+        <img src="https://api.codeclimate.com/v1/badges/f2ea66abc81e4a578a31/maintainability" alt="Maintainability" />
+    </a>
+    <a href="https://codeclimate.com/github/FluxorOrg/Fluxor/test_coverage">
+        <img src="https://api.codeclimate.com/v1/badges/f2ea66abc81e4a578a31/test_coverage" alt="Test Coverage" />
+    </a>
+</p>
+<h2 id='why-do-i-need-fluxor' class='heading'>Why do I need Fluxor?</h2>
+
+<p>When developing apps, it can quickly become difficult to keep track of the flow of data. Data flows in multiple directions and can easily become inconsistent with <em>Multiple Sources of Truth</em>.</p>
+
+<p>With Fluxor, data flows in only one direction, there is only one <em>Single Source of Truth</em>, updates to the state are done with pure functions, the flow in the app can easily be followed, and all the individual parts can be unit tested separately.</p>
+<h2 id='how-does-it-work' class='heading'>How does it work?</h2>
+
+<p>Fluxor is made up from the following types:</p>
+
+<ul>
+<li><code><a href="Classes/Store.html">Store</a></code> contains an immutable state (the <strong>Single Source of Truth</strong>).</li>
+<li><code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched on the <strong>Store</strong> to update the state.</li>
+<li><code><a href="Structs/Reducer.html">Reducer</a></code>s gives the <strong>Store</strong> a new state based on the <strong>Actions</strong> dispatched.</li>
+<li><code><a href="Classes/Selector.html">Selector</a></code>s selects (and eventually transform) part(s) of the state to use (eg. in views).</li>
+<li><code><a href="Enums/Effect.html">Effect</a></code>s gets triggered by <strong>Actions</strong>, and can perform async task which in turn can dispatch new <strong>Actions</strong>.</li>
+<li><code><a href="Protocols/Interceptor.html">Interceptor</a></code>s intercepts every dispatched <strong>Action</strong> and state change for easier debugging.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/FluxorOrg/Fluxor/master/Assets/Diagram.png" alt=""></p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Fluxor can be installed as a dependency to your project using <a href="https://swift.org/package-manager">Swift Package Manager</a>, by simply adding <code>https://github.com/FluxorOrg/Fluxor.git</code>.</p>
+<h3 id='requirements' class='heading'>Requirements</h3>
+
+<ul>
+<li>iOS 13.0+ / macOS 10.15+ / tvOS 13.0+</li>
+<li>Xcode 11.0+</li>
+<li>Swift 5.2+</li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>As a minimum, an app using Fluxor will need a <code><a href="Classes/Store.html">Store</a></code>, an <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>, a <code><a href="Structs/Reducer.html">Reducer</a></code>, a <code><a href="Classes/Selector.html">Selector</a></code> and a state.</p>
+
+<p>Here is a setup where firing the <code>IncrementAction</code> (1) will increment the <code>counter</code> (2) in <code>AppState</code> (3), and when selecting with the <code>counterSelector</code> (4) on the <code><a href="Classes/Store.html">Store</a></code> will publish the <code>counter</code> everytime the state changes (5).</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Combine</span>
+<span class="kd">import</span> <span class="kt">Fluxor</span>
+<span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="c1">// 3</span>
+<span class="kd">struct</span> <span class="kt">AppState</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">counter</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="c1">// 1</span>
+<span class="kd">struct</span> <span class="kt">IncrementAction</span><span class="p">:</span> <span class="kt">Action</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">increment</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="c1">// 4</span>
+<span class="k">let</span> <span class="nv">counterSelector</span> <span class="o">=</span> <span class="kt">Selector</span><span class="p">(</span><span class="nv">keyPath</span><span class="p">:</span> <span class="err">\</span><span class="kt">AppState</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">store</span> <span class="o">=</span> <span class="kt">Store</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">AppState</span><span class="p">(</span><span class="nv">counter</span><span class="p">:</span> <span class="mi">0</span><span class="p">))</span>
+<span class="n">store</span><span class="o">.</span><span class="nf">register</span><span class="p">(</span><span class="nv">reducer</span><span class="p">:</span> <span class="kt">Reducer</span><span class="p">(</span>
+    <span class="kt">ReduceOn</span><span class="p">(</span><span class="kt">IncrementAction</span><span class="o">.</span><span class="k">self</span><span class="p">)</span> <span class="p">{</span> <span class="n">state</span><span class="p">,</span> <span class="n">action</span> <span class="k">in</span>
+        <span class="n">state</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="n">action</span><span class="o">.</span><span class="n">increment</span> <span class="c1">// 2</span>
+    <span class="p">}</span>
+<span class="p">))</span>
+
+<span class="k">let</span> <span class="nv">cancellable</span> <span class="o">=</span> <span class="n">store</span><span class="o">.</span><span class="nf">select</span><span class="p">(</span><span class="n">counterSelector</span><span class="p">)</span><span class="o">.</span><span class="n">sink</span> <span class="p">{</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Current count: </span><span class="se">\(</span><span class="nv">$0</span><span class="se">)</span><span class="s">"</span><span class="p">)</span> <span class="c1">// 5</span>
+<span class="p">}</span>
+
+<span class="n">store</span><span class="o">.</span><span class="nf">dispatch</span><span class="p">(</span><span class="nv">action</span><span class="p">:</span> <span class="kt">IncrementAction</span><span class="p">(</span><span class="nv">increment</span><span class="p">:</span> <span class="mi">42</span><span class="p">))</span>
+<span class="c1">// Will print out "Current count: 42"</span>
+</code></pre>
+<h3 id='side-effects' class='heading'>Side Effects</h3>
+
+<p>The above example is a simple use case, where an <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> is dispatched and the state is updated by a <code><a href="Structs/Reducer.html">Reducer</a></code>. In cases where something should happen when an <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> is dispatched (eg. fetching data from the internet or some system service), Fluxor provides <code><a href="Protocols/Effects.html">Effects</a></code>.</p>
+
+<p><code><a href="Protocols/Effects.html">Effects</a></code> are registered in the <code><a href="Classes/Store.html">Store</a></code> and will receive all <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s dispatched. An <code><a href="Enums/Effect.html">Effect</a></code> will in most cases be a <code>Publisher</code> mapped from the dispatched <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> - the mapped <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> will be dispatched on the <code><a href="Classes/Store.html">Store</a></code>.</p>
+
+<p>Alternatively an <code><a href="Enums/Effect.html">Effect</a></code> can also be a <code>Cancellable</code> when it don&rsquo;t need to have an <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> dispatched.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Combine</span>
+<span class="kd">import</span> <span class="kt">Fluxor</span>
+<span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">class</span> <span class="kt">TodosEffects</span><span class="p">:</span> <span class="kt">Effects</span> <span class="p">{</span>
+    <span class="kd">typealias</span> <span class="kt">Environment</span> <span class="o">=</span> <span class="kt">AppEnvironment</span>
+
+    <span class="k">let</span> <span class="nv">fetchTodos</span> <span class="o">=</span> <span class="kt">Effect</span><span class="o">&lt;</span><span class="kt">Environment</span><span class="o">&gt;.</span><span class="n">dispatchingOne</span> <span class="p">{</span> <span class="n">actions</span><span class="p">,</span> <span class="n">environment</span> <span class="k">in</span>
+        <span class="n">actions</span><span class="o">.</span><span class="nf">ofType</span><span class="p">(</span><span class="kt">FetchTodosAction</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">flatMap</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span>
+                <span class="n">environment</span><span class="o">.</span><span class="n">todoService</span><span class="o">.</span><span class="nf">fetchTodos</span><span class="p">()</span>
+                    <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">DidFetchTodosAction</span><span class="p">(</span><span class="nv">todos</span><span class="p">:</span> <span class="nv">$0</span><span class="p">)</span> <span class="p">}</span>
+                    <span class="o">.</span><span class="k">catch</span> <span class="p">{</span> <span class="n">_</span> <span class="k">in</span> <span class="kt">Just</span><span class="p">(</span><span class="kt">DidFailFetchingTodosAction</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="s">"An error occurred."</span><span class="p">))</span> <span class="p">}</span>
+            <span class="p">}</span>
+            <span class="o">.</span><span class="nf">eraseToAnyPublisher</span><span class="p">()</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='intercepting-actions-and-changes' class='heading'>Intercepting actions and changes</h3>
+
+<p>If read-only access to all <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s dispatched and state changes is needed, an <code><a href="Protocols/Interceptor.html">Interceptor</a></code> can be used. <code><a href="Protocols/Interceptor.html">Interceptor</a></code> is just a protocol, and when registered in the <code><a href="Classes/Store.html">Store</a></code>, instances of types conforming to this protocol will receive a callback everytime an <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code> is dispatched.</p>
+
+<p>Fluxor comes with two implementations of <code><a href="Protocols/Interceptor.html">Interceptor</a></code>:</p>
+
+<ul>
+<li><code><a href="Classes/PrintInterceptor.html">PrintInterceptor</a></code> for printing <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s and state changes to the log.</li>
+<li><code><a href="Classes/TestInterceptor.html">TestInterceptor</a></code> to help assert that specific <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s was dispatched in unit tests.</li>
+</ul>
+<h2 id='packages-for-using-it-with-swiftui-and-testing' class='heading'>Packages for using it with SwiftUI and testing</h2>
+
+<p>Fluxor comes with packages, to make it easier to use it with SwiftUI and for testing apps using Fluxor.</p>
+
+<ul>
+<li><a href="https://fluxor.dev/Using%20Fluxor%20with%20SwiftUI.html">More info on how to use it with SwiftUI</a></li>
+<li><a href="https://fluxor.dev/Test%20Support.html">More info on how to test apps using Fluxor</a></li>
+</ul>
+<h2 id='debugging-with-fluxorexplorer' class='heading'>Debugging with FluxorExplorer</h2>
+
+<p>Fluxor has a companion app, <a href="https://github.com/FluxorOrg/FluxorExplorer"><strong>FluxorExplorer</strong></a>, which helps when debugging apps using Fluxor. FluxorExplorer lets you look through the dispatched <code><a href="Actions.html#/s:6Fluxor6ActionP">Action</a></code>s and state changes, to debug the data flow of the app.</p>
+
+<p>FluxorExplorer is available on the App Store but also available as open source.</p>
+
+<p><a href="https://apps.apple.com/us/app/fluxorexplorer/id1515805273?mt=8">
+    <img src="https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-06-08&kind=iossoftware&bubble=ios_apps" style="width: 135px; height: 40px" alt="Download on the App Store" />
+</a></p>
+
+<p>To learn more about how to use FluxorExplorer, <a href="https://github.com/FluxorOrg/FluxorExplorer">go to the repository for the app</a>.</p>
+
+<p><img src="https://raw.githubusercontent.com/FluxorOrg/Fluxor/master/Assets/FluxorExplorer.png" alt=""></p>
+<h2 id='apps-using-fluxor' class='heading'>Apps using Fluxor</h2>
+<h3 id='real-world-apps' class='heading'>Real world apps</h3>
+
+<ul>
+<li><a href="https://github.com/FluxorOrg/FluxorExplorer">FluxorExplorer</a></li>
+</ul>
+<h3 id='sample-apps' class='heading'>Sample apps</h3>
+
+<ul>
+<li><a href="https://github.com/FluxorOrg/FluxorSampleToDo">FluxorSampleToDo</a></li>
+</ul>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

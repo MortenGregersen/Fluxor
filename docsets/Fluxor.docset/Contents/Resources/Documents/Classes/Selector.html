@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Selector Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Selector" class="dashAnchor"></a>
+    <a title="Selector Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Fluxor Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Selector Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Selector</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Selector</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SelectorProtocol.html">SelectorProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A type which takes a <code>State</code> and returns a <code>Value</code> from it.</p>
+
+<p><code>Selector</code>s can be based on other <code>Selector</code>s making it possible to select a combined <code>Value</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC2id10Foundation4UUIDVvp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC2id10Foundation4UUIDVvp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An unique identifier used when overriding the <code>Selector</code> on the <code><a href="../Classes/MockStore.html">MockStore</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">UUID</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC7keyPathACyxq_Gs03KeyD0Cyxq_G_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(keyPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC7keyPathACyxq_Gs03KeyD0Cyxq_G_tcfc">init(keyPath:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from a <code>keyPath</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>keyPath</code> to create the <code>Selector</code> from</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC9projectorACyxq_Gq_xc_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC9projectorACyxq_Gq_xc_tcfc">init(projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from a <code>projector</code> closure.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>projector</code> closure to create the <code>Selector</code> from</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor16SelectorProtocolP3mapy5ValueQz5StateQzF"></a>
+                    <a name="//apple_ref/swift/Method/map(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor16SelectorProtocolP3mapy5ValueQz5StateQzF">map(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">map</span><span class="p">(</span><span class="n">_</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">State</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC4with_9projectorAA9Selector1Cyxqd__q_Gqd___q_5ValueQyd__ct5StateQyd__RszAA0B8ProtocolRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/with(_:projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC4with_9projectorAA9Selector1Cyxqd__q_Gqd___q_5ValueQyd__ct5StateQyd__RszAA0B8ProtocolRd__lFZ">with(_:<wbr>projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from a <code>Selector</code> and a <code>projector</code> function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">with</span><span class="o">&lt;</span><span class="kt">S1</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector1</span><span class="p">:</span> <span class="kt">S1</span><span class="p">,</span>
+                     <span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">S1</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Selector1.html">Selector1</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">S1</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to pass the value from the <code>Selector</code> to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Selector</code> from the given <code>Selector</code> and the <code>projector</code> function</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC4with__9projectorAA9Selector2Cyxqd__qd_0_q_Gqd___qd_0_q_5ValueQyd___AIQyd_0_tct5StateQyd__RszAA0B8ProtocolRd__AaNRd_0_ALQyd_0_AMRSr0_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/with(_:_:projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC4with__9projectorAA9Selector2Cyxqd__qd_0_q_Gqd___qd_0_q_5ValueQyd___AIQyd_0_tct5StateQyd__RszAA0B8ProtocolRd__AaNRd_0_ALQyd_0_AMRSr0_lFZ">with(_:<wbr>_:<wbr>projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from two <code>Selector</code>s and a <code>projector</code> function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">with</span><span class="o">&lt;</span><span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector1</span><span class="p">:</span> <span class="kt">S1</span><span class="p">,</span>
+                         <span class="n">_</span> <span class="nv">selector2</span><span class="p">:</span> <span class="kt">S2</span><span class="p">,</span>
+                         <span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">S1</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S2</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Selector2.html">Selector2</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to pass the values from the <code>Selector</code>s to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Selector</code> from the given <code>Selector</code>s and the <code>projector</code> function</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC4with___9projectorAA9Selector3Cyxqd__qd_0_qd_1_q_Gqd___qd_0_qd_1_q_5ValueQyd___AIQyd_0_AIQyd_1_tct5StateQyd__RszAA0B8ProtocolRd__AaORd_0_AaORd_1_AMQyd_0_ANRSAMQyd_1_APRSr1_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/with(_:_:_:projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC4with___9projectorAA9Selector3Cyxqd__qd_0_qd_1_q_Gqd___qd_0_qd_1_q_5ValueQyd___AIQyd_0_AIQyd_1_tct5StateQyd__RszAA0B8ProtocolRd__AaORd_0_AaORd_1_AMQyd_0_ANRSAMQyd_1_APRSr1_lFZ">with(_:<wbr>_:<wbr>_:<wbr>projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from three <code>Selector</code>s and a <code>projector</code> function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">with</span><span class="o">&lt;</span><span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector1</span><span class="p">:</span> <span class="kt">S1</span><span class="p">,</span>
+                             <span class="n">_</span> <span class="nv">selector2</span><span class="p">:</span> <span class="kt">S2</span><span class="p">,</span>
+                             <span class="n">_</span> <span class="nv">selector3</span><span class="p">:</span> <span class="kt">S3</span><span class="p">,</span>
+                             <span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">S1</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S2</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S3</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Selector3.html">Selector3</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector3</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The third <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to pass the values from the <code>Selectors</code> to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Selector</code> from the given <code>Selector</code>s and the <code>projector</code> function</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC4with____9projectorAA9Selector4Cyxqd__qd_0_qd_1_qd_2_q_Gqd___qd_0_qd_1_qd_2_q_5ValueQyd___AIQyd_0_AIQyd_1_AIQyd_2_tct5StateQyd__RszAA0B8ProtocolRd__AaPRd_0_AaPRd_1_AaPRd_2_ANQyd_0_AORSANQyd_1_AQRSANQyd_2_ARRSr2_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/with(_:_:_:_:projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC4with____9projectorAA9Selector4Cyxqd__qd_0_qd_1_qd_2_q_Gqd___qd_0_qd_1_qd_2_q_5ValueQyd___AIQyd_0_AIQyd_1_AIQyd_2_tct5StateQyd__RszAA0B8ProtocolRd__AaPRd_0_AaPRd_1_AaPRd_2_ANQyd_0_AORSANQyd_1_AQRSANQyd_2_ARRSr2_lFZ">with(_:<wbr>_:<wbr>_:<wbr>_:<wbr>projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from four <code>Selector</code>s and a <code>projector</code> function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">with</span><span class="o">&lt;</span><span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="p">,</span> <span class="kt">S4</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector1</span><span class="p">:</span> <span class="kt">S1</span><span class="p">,</span>
+                                 <span class="n">_</span> <span class="nv">selector2</span><span class="p">:</span> <span class="kt">S2</span><span class="p">,</span>
+                                 <span class="n">_</span> <span class="nv">selector3</span><span class="p">:</span> <span class="kt">S3</span><span class="p">,</span>
+                                 <span class="n">_</span> <span class="nv">selector4</span><span class="p">:</span> <span class="kt">S4</span><span class="p">,</span>
+                                 <span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">S1</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S2</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S3</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S4</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Selector4.html">Selector4</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="p">,</span> <span class="kt">S4</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector3</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The third <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector4</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The fourth <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to pass the values from the <code>Selectors</code> to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Selector</code> from the given <code>Selector</code>s and the <code>projector</code> function</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor8SelectorC4with_____9projectorAA9Selector5Cyxqd__qd_0_qd_1_qd_2_qd_3_q_Gqd___qd_0_qd_1_qd_2_qd_3_q_5ValueQyd___AIQyd_0_AIQyd_1_AIQyd_2_AIQyd_3_tct5StateQyd__RszAA0B8ProtocolRd__AaQRd_0_AaQRd_1_AaQRd_2_AaQRd_3_AOQyd_0_APRSAOQyd_1_ARRSAOQyd_2_ASRSAOQyd_3_ATRSr3_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/with(_:_:_:_:_:projector:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor8SelectorC4with_____9projectorAA9Selector5Cyxqd__qd_0_qd_1_qd_2_qd_3_q_Gqd___qd_0_qd_1_qd_2_qd_3_q_5ValueQyd___AIQyd_0_AIQyd_1_AIQyd_2_AIQyd_3_tct5StateQyd__RszAA0B8ProtocolRd__AaQRd_0_AaQRd_1_AaQRd_2_AaQRd_3_AOQyd_0_APRSAOQyd_1_ARRSAOQyd_2_ASRSAOQyd_3_ATRSr3_lFZ">with(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>projector:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Selector</code> from five <code>Selector</code>s and a <code>projector</code> function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">with</span><span class="o">&lt;</span><span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="p">,</span> <span class="kt">S4</span><span class="p">,</span> <span class="kt">S5</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector1</span><span class="p">:</span> <span class="kt">S1</span><span class="p">,</span>
+                                     <span class="n">_</span> <span class="nv">selector2</span><span class="p">:</span> <span class="kt">S2</span><span class="p">,</span>
+                                     <span class="n">_</span> <span class="nv">selector3</span><span class="p">:</span> <span class="kt">S3</span><span class="p">,</span>
+                                     <span class="n">_</span> <span class="nv">selector4</span><span class="p">:</span> <span class="kt">S4</span><span class="p">,</span>
+                                     <span class="n">_</span> <span class="nv">selector5</span><span class="p">:</span> <span class="kt">S5</span><span class="p">,</span>
+                                     <span class="nv">projector</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">S1</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S2</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S3</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span>
+                                                           <span class="kt">S4</span><span class="o">.</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">S5</span><span class="o">.</span><span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/Selector5.html">Selector5</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">S1</span><span class="p">,</span> <span class="kt">S2</span><span class="p">,</span> <span class="kt">S3</span><span class="p">,</span> <span class="kt">S4</span><span class="p">,</span> <span class="kt">S5</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector1</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The first <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector2</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The second <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector3</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The third <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector4</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The fourth <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector5</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The fifth <code>Selector</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>projector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to pass the values from the <code>Selectors</code> to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Selector</code> from the given <code>Selector</code>s and the <code>projector</code> function</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

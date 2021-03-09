@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Store" class="dashAnchor"></a>
+    <a title="Store Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Fluxor Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/FluxorOrg/Fluxor"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Fluxor Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Store Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../testing-reducers.html">Testing Reducers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-selectors.html">Testing Selectors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../testing-effects.html">Testing Effects</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Store.html">Store</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Store.html">Store</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Actions.html">Actions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Actions.html#/s:6Fluxor6ActionP">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ActionTemplate.html">ActionTemplate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnonymousAction.html">AnonymousAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentifiableAction.html">IdentifiableAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Reducers.html">Reducers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Reducer.html">Reducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ReduceOn.html">ReduceOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Selectors.html">Selectors</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SelectorProtocol.html">SelectorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector.html">Selector</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector1.html">Selector1</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector2.html">Selector2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector3.html">Selector3</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector4.html">Selector4</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Selector5.html">Selector5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Effects.html">Effects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Effects.html">Effects</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Effect.html">Effect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Publisher.html">Publisher</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Debugging.html">Debugging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Interceptor.html">Interceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PrintInterceptor.html">PrintInterceptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Using%20Fluxor%20with%20SwiftUI.html">Using Fluxor with SwiftUI</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ObservableValue.html">ObservableValue</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Test%20Support.html">Test Support</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MockStore.html">MockStore</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EffectRunner.html">EffectRunner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor.html">TestInterceptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TestInterceptor/WaitingError.html">– WaitingError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EncodableAction.html">EncodableAction</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Store</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Store</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Environment</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">ObservableObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Store</span><span class="p">:</span> <span class="kt">Subscriber</span></code></pre>
+
+                </div>
+              </div>
+            <p>The <code>Store</code> is a centralized container for a single-source-of-truth <code>State</code>.</p>
+
+<p>A <code>Store</code> is configured by registering all the desired <code><a href="../Structs/Reducer.html">Reducer</a></code>s and  <code><a href="../Protocols/Effects.html">Effects</a></code>.</p>
+
+<p>An <code>Environment</code> can be set up to enable dependency injection in <code><a href="../Enums/Effect.html">Effect</a></code>s.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>To update the <code>State</code> callers dispatch <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s on the <code>Store</code>.</p>
+<h2 id='selecting' class='heading'>Selecting</h2>
+
+<p>To select a value in the <code>State</code> the callers can either use a <code><a href="../Classes/Selector.html">Selector</a></code> or a key path.
+It is possible to get a <code>Publisher</code> for the value or just to select the current value.</p>
+<h2 id='interceptors' class='heading'>Interceptors</h2>
+
+<p>It is possible to intercept all <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s and <code>State</code> changes by registering an <code><a href="../Protocols/Interceptor.html">Interceptor</a></code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC5statexvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC5statexvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The state of the <code>Store</code>. It can only be modified by the registered <code><a href="../Structs/Reducer.html">Reducer</a></code>s when <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@Published</span>
+<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">State</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC11environmentq_vp"></a>
+                    <a name="//apple_ref/swift/Property/environment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC11environmentq_vp">environment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The environment passed to the <code><a href="../Protocols/Effects.html">Effects</a></code>. The <code>Environment</code> can contain services and other dependencies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initialization"></a>
+                  <h3 class="section-name"><p>Initialization</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC12initialState11environment8reducersACyxq_Gx_q_SayAA7ReducerVyxGGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(initialState:environment:reducers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC12initialState11environment8reducersACyxq_Gx_q_SayAA7ReducerVyxGGtcfc">init(initialState:<wbr>environment:<wbr>reducers:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the <code>Store</code> with an initial <code>State</code>, an <code>Environment</code> and eventually <code><a href="../Structs/Reducer.html">Reducer</a></code>s.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">State</span><span class="p">,</span> <span class="nv">environment</span><span class="p">:</span> <span class="kt">Environment</span><span class="p">,</span> <span class="nv">reducers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initialState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The initial <code>State</code> for the <code>Store</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>environment</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Environment</code> to pass to <code><a href="../Enums/Effect.html">Effect</a></code>s</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/Reducer.html">Reducer</a></code>s to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Dispatching"></a>
+                <a name="//apple_ref/swift/Section/Dispatching" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Dispatching"></a>
+                  <h3 class="section-name"><p>Dispatching</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8dispatch6actionyAA6Action_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/dispatch(action:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8dispatch6actionyAA6Action_p_tF">dispatch(action:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dispatches an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> and creates a new <code>State</code> by running the current <code>State</code> and the <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>
+through all registered <code><a href="../Structs/Reducer.html">Reducer</a></code>s.</p>
+
+<p>After the <code>State</code> is set, all registered <code><a href="../Protocols/Interceptor.html">Interceptor</a></code>s are notified of the change.
+Lastly the <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> is dispatched to all registered <code><a href="../Enums/Effect.html">Effect</a></code>s.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">dispatch</span><span class="p">(</span><span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> to dispatch</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Reducers"></a>
+                <a name="//apple_ref/swift/Section/Reducers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Reducers"></a>
+                  <h3 class="section-name"><p>Reducers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register7reduceryAA7ReducerVyxG_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(reducer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register7reduceryAA7ReducerVyxG_tF">register(reducer:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Structs/Reducer.html">Reducer</a></code>. The <code><a href="../Structs/Reducer.html">Reducer</a></code> will be run for all subsequent actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">reducer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/Reducer.html">Reducer</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register7reducer3foryAA7ReducerVyqd__G_s15WritableKeyPathCyxqd__GtlF"></a>
+                    <a name="//apple_ref/swift/Method/register(reducer:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register7reducer3foryAA7ReducerVyqd__G_s15WritableKeyPathCyxqd__GtlF">register(reducer:<wbr>for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Structs/Reducer.html">Reducer</a></code> for a slice of the <code>State</code>. The <code><a href="../Structs/Reducer.html">Reducer</a></code> will be run for all subsequent actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">Substate</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">reducer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">Substate</span><span class="o">&gt;</span><span class="p">,</span> <span class="k">for</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">WritableKeyPath</span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Substate</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/Reducer.html">Reducer</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>KeyPath</code> for which the <code><a href="../Structs/Reducer.html">Reducer</a></code> should be run</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC10unregister7reduceryAA7ReducerVyqd__G_tlF"></a>
+                    <a name="//apple_ref/swift/Method/unregister(reducer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC10unregister7reduceryAA7ReducerVyqd__G_tlF">unregister(reducer:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters the given <code><a href="../Structs/Reducer.html">Reducer</a></code>. The <code><a href="../Structs/Reducer.html">Reducer</a></code> will no longer be run when <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s are dispatched.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">unregister</span><span class="o">&lt;</span><span class="kt">SomeState</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">reducer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">SomeState</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/Reducer.html">Reducer</a></code> to unregister</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Effects"></a>
+                <a name="//apple_ref/swift/Section/Effects" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Effects"></a>
+                  <h3 class="section-name"><p>Effects</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register7effectsyqd___t11EnvironmentQyd__Rs_AA7EffectsRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(effects:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register7effectsyqd___t11EnvironmentQyd__Rs_AA7EffectsRd__lF">register(effects:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Protocols/Effects.html">Effects</a></code>. The <code><a href="../Protocols/Effects.html">Effects</a></code> will receive all subsequent actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">effects</span><span class="p">:</span> <span class="kt">E</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Environment</span> <span class="o">==</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Environment</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Effects.html">Effects</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>effects</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/Effects.html">Effects</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register7effectsySayAA6EffectOyq_GG_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(effects:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register7effectsySayAA6EffectOyq_GG_tF">register(effects:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Enums/Effect.html">Effect</a></code>s. The <code><a href="../Enums/Effect.html">Effect</a></code>s will receive all subsequent actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">effects</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/Effect.html">Effect</a></span><span class="o">&lt;</span><span class="kt">Environment</span><span class="o">&gt;</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>effects</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The array of <code><a href="../Enums/Effect.html">Effect</a></code>s to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register6effectyAA6EffectOyq_G_tF"></a>
+                    <a name="//apple_ref/swift/Method/register(effect:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register6effectyAA6EffectOyq_G_tF">register(effect:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Enums/Effect.html">Effect</a></code>. The <code><a href="../Enums/Effect.html">Effect</a></code> will receive all subsequent actions.</p>
+
+<p>Only <code><a href="../Enums/Effect.html">Effect</a></code>s registered from a type conforming to <code><a href="../Protocols/Effects.html">Effects</a></code> can be unregistered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">register</span><span class="p">(</span><span class="nv">effect</span><span class="p">:</span> <span class="kt"><a href="../Enums/Effect.html">Effect</a></span><span class="o">&lt;</span><span class="kt">Environment</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>effect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Enums/Effect.html">Effect</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC17unregisterEffects6ofTypeyqd__m_t11EnvironmentQyd__Rs_AA0D0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/unregisterEffects(ofType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC17unregisterEffects6ofTypeyqd__m_t11EnvironmentQyd__Rs_AA0D0Rd__lF">unregisterEffects(ofType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters the given <code><a href="../Protocols/Effects.html">Effects</a></code>. The <code><a href="../Protocols/Effects.html">Effects</a></code> will no longer receive any actions.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">unregisterEffects</span><span class="o">&lt;</span><span class="kt">E</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">effects</span><span class="p">:</span> <span class="kt">E</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Environment</span> <span class="o">==</span> <span class="kt">E</span><span class="o">.</span><span class="kt">Environment</span><span class="p">,</span> <span class="kt">E</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Effects.html">Effects</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>effects</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/Effects.html">Effects</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Interceptors"></a>
+                <a name="//apple_ref/swift/Section/Interceptors" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Interceptors"></a>
+                  <h3 class="section-name"><p>Interceptors</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC8register11interceptoryqd___t5StateQyd__RszAA11InterceptorRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/register(interceptor:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC8register11interceptoryqd___t5StateQyd__RszAA11InterceptorRd__lF">register(interceptor:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the given <code><a href="../Protocols/Interceptor.html">Interceptor</a></code>. The <code><a href="../Protocols/Interceptor.html">Interceptor</a></code> will receive all subsequent <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s and state changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span><span class="o">&lt;</span><span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">interceptor</span><span class="p">:</span> <span class="kt">I</span><span class="p">)</span> <span class="k">where</span> <span class="kt">State</span> <span class="o">==</span> <span class="kt">I</span><span class="o">.</span><span class="kt">State</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Interceptor.html">Interceptor</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Protocols/Interceptor.html">Interceptor</a></code> to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC22unregisterInterceptors6ofTypeyqd__m_t5StateQyd__RszAA11InterceptorRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/unregisterInterceptors(ofType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC22unregisterInterceptors6ofTypeyqd__m_t5StateQyd__RszAA11InterceptorRd__lF">unregisterInterceptors(ofType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters all registered <code><a href="../Protocols/Interceptor.html">Interceptor</a></code>s of the given type.
+The <code><a href="../Protocols/Interceptor.html">Interceptor</a></code>s will no longer receive any <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>s or state changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">unregisterInterceptors</span><span class="o">&lt;</span><span class="kt">I</span><span class="o">&gt;</span><span class="p">(</span><span class="n">ofType</span> <span class="nv">interceptor</span><span class="p">:</span> <span class="kt">I</span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="k">where</span> <span class="kt">State</span> <span class="o">==</span> <span class="kt">I</span><span class="o">.</span><span class="kt">State</span><span class="p">,</span> <span class="kt">I</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Interceptor.html">Interceptor</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interceptor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of<code><a href="../Protocols/Interceptor.html">Interceptor</a></code> to unregister</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Selecting"></a>
+                <a name="//apple_ref/swift/Section/Selecting" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Selecting"></a>
+                  <h3 class="section-name"><p>Selecting</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC6selecty7Combine12AnyPublisherVyqd__s5NeverOGAA8SelectorCyxqd__GlF"></a>
+                    <a name="//apple_ref/swift/Method/select(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC6selecty7Combine12AnyPublisherVyqd__s5NeverOGAA8SelectorCyxqd__GlF">select(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Publisher</code> for a <code><a href="../Classes/Selector.html">Selector</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">select</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">AnyPublisher</span><span class="o">&lt;</span><span class="kt">Value</span><span class="p">,</span> <span class="kt">Never</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code> to use when getting the value in the <code>State</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Publisher</code> for the <code>Value</code> in the <code>State</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC13selectCurrentyqd__AA8SelectorCyxqd__GlF"></a>
+                    <a name="//apple_ref/swift/Method/selectCurrent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC13selectCurrentyqd__AA8SelectorCyxqd__GlF">selectCurrent(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the current value in the <code>State</code> for a <code><a href="../Classes/Selector.html">Selector</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="n">selectCurrent</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code> to use when getting the value in the <code>State</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current <code>Value</code> in the <code>State</code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Subscriptions"></a>
+                <a name="//apple_ref/swift/Section/Subscriptions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Subscriptions"></a>
+                  <h3 class="section-name"><p>Subscriptions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine10SubscriberP5InputQa"></a>
+                    <a name="//apple_ref/swift/Alias/Input" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine10SubscriberP5InputQa">Input</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Input</span> <span class="o">=</span> <span class="kt"><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine10SubscriberP7FailureQa"></a>
+                    <a name="//apple_ref/swift/Alias/Failure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine10SubscriberP7FailureQa">Failure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Failure</span> <span class="o">=</span> <span class="kt">Never</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine10SubscriberP7receive12subscriptionyAA12Subscription_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/receive(subscription:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine10SubscriberP7receive12subscriptionyAA12Subscription_p_tF">receive(subscription:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receive</span><span class="p">(</span><span class="nv">subscription</span><span class="p">:</span> <span class="kt">Subscription</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine10SubscriberP7receiveyAA11SubscribersO6DemandV5InputQzF"></a>
+                    <a name="//apple_ref/swift/Method/receive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine10SubscriberP7receiveyAA11SubscribersO6DemandV5InputQzF">receive(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receive</span><span class="p">(</span><span class="n">_</span> <span class="nv">input</span><span class="p">:</span> <span class="kt"><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Subscribers</span><span class="o">.</span><span class="kt">Demand</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Combine10SubscriberP7receive10completionyAA11SubscribersO10CompletionOy_7FailureQzG_tF"></a>
+                    <a name="//apple_ref/swift/Method/receive(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Combine10SubscriberP7receive10completionyAA11SubscribersO10CompletionOy_7FailureQzG_tF">receive(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receive</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt">Subscribers</span><span class="o">.</span><span class="kt">Completion</span><span class="o">&lt;</span><span class="kt">Never</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC0A7SwiftUIE7observeyAD15ObservableValueCyqd__GAA8SelectorCyxqd__GlF"></a>
+                    <a name="//apple_ref/swift/Method/observe(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC0A7SwiftUIE7observeyAD15ObservableValueCyqd__GAA8SelectorCyxqd__GlF">observe(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an <code><a href="../Classes/ObservableValue.html">ObservableValue</a></code> from the given <code><a href="../Classes/Selector.html">Selector</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">observe</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ObservableValue.html">ObservableValue</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code>s to use for observing</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code><a href="../Classes/ObservableValue.html">ObservableValue</a></code> based on the given <code><a href="../Classes/Selector.html">Selector</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC0A7SwiftUIE7binding3get4send0cD07BindingVyqd__GAA8SelectorCyxqd__G_AA14ActionTemplateVyqd__GtlF"></a>
+                    <a name="//apple_ref/swift/Method/binding(get:send:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC0A7SwiftUIE7binding3get4send0cD07BindingVyqd__GAA8SelectorCyxqd__G_AA14ActionTemplateVyqd__GtlF">binding(get:<wbr>send:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>ValueBinding</code> from the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>.</p>
+
+<p>When the value is updated an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>, created from the <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>, is dispatched on the <code>Store</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span><span class="k">get</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Fluxor</span><span class="o">.</span><span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">,</span>
+                    <span class="n">send</span> <span class="nv">actionTemplate</span><span class="p">:</span> <span class="kt"><a href="../Structs/ActionTemplate.html">ActionTemplate</a></span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code>s to use for getting the current value</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actionTemplate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code> to use for dispatching an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> when the value changes</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Binding</code> based on the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC0A7SwiftUIE7binding3get6enable7disable0cD07BindingVySbGAA8SelectorCyxSbG_AA14ActionTemplateVyytGARtF"></a>
+                    <a name="//apple_ref/swift/Method/binding(get:enable:disable:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC0A7SwiftUIE7binding3get6enable7disable0cD07BindingVySbGAA8SelectorCyxSbG_AA14ActionTemplateVyytGARtF">binding(get:<wbr>enable:<wbr>disable:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Binding</code> from the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>s for enabling and disabling the value.</p>
+
+<p>When the value is enabled/disabled, an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>, created from one of the <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>s,
+is dispatched on the <code>Store</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">binding</span><span class="p">(</span><span class="k">get</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Fluxor</span><span class="o">.</span><span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Bool</span><span class="o">&gt;</span><span class="p">,</span>
+             <span class="n">enable</span> <span class="nv">enableActionTemplate</span><span class="p">:</span> <span class="kt"><a href="../Structs/ActionTemplate.html">ActionTemplate</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">,</span>
+             <span class="n">disable</span> <span class="nv">disableActionTemplate</span><span class="p">:</span> <span class="kt"><a href="../Structs/ActionTemplate.html">ActionTemplate</a></span><span class="o">&lt;</span><span class="kt">Void</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Binding</span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code>s to use for getting the current value</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enableActionTemplate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code> to use for dispatching an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>
+                              when the value should be enabled</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>disableActionTemplate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code> to use for dispatching an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code>
+                               when the value should be disabled</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Binding</code> based on the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>s</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreC0A7SwiftUIE7binding3get4send0cD07BindingVyqd__GAA8SelectorCyxqd__G_AA6Action_pqd__ctlF"></a>
+                    <a name="//apple_ref/swift/Method/binding(get:send:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreC0A7SwiftUIE7binding3get4send0cD07BindingVyqd__GAA8SelectorCyxqd__G_AA6Action_pqd__ctlF">binding(get:<wbr>send:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>Binding</code> from the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code>.</p>
+
+<p>When the value is updated an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> (returned by the closure), is dispatched on the <code>Store</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span><span class="p">(</span><span class="k">get</span> <span class="nv">selector</span><span class="p">:</span> <span class="kt">Fluxor</span><span class="o">.</span><span class="kt"><a href="../Classes/Selector.html">Selector</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span><span class="p">,</span>
+                    <span class="n">send</span> <span class="nv">action</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="kt">Binding</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>selector</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Classes/Selector.html">Selector</a></code>s to use for getting the current value</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure used to decide which <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code> to use
+                        for dispatching an <code><a href="../Actions.html#/s:6Fluxor6ActionP">Action</a></code> when the value changes</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value used to decide which <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code> to use for the update.
+               This can either be the current value or the one used for the update</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code>Binding</code> based on the given <code><a href="../Classes/Selector.html">Selector</a></code> and <code><a href="../Structs/ActionTemplate.html">ActionTemplate</a></code></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Environment%60%20%3D%3D%20%60Void%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Environment` == `Void`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Environment%60%20%3D%3D%20%60Void%60"></a>
+                  <h3 class="section-name"><p>Available where <code>Environment</code> == <code>Void</code></p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Fluxor5StoreCAAytRs_rlE12initialState8reducersACyxytGx_SayAA7ReducerVyxGGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(initialState:reducers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Fluxor5StoreCAAytRs_rlE12initialState8reducersACyxytGx_SayAA7ReducerVyxGGtcfc">init(initialState:<wbr>reducers:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes the <code>Store</code> with an initial <code>State</code> and eventually <code><a href="../Structs/Reducer.html">Reducer</a></code>s.</p>
+
+<p>Using this initializer will give all <code><a href="../Protocols/Effects.html">Effects</a></code> a <code>Void</code> environment.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">initialState</span><span class="p">:</span> <span class="kt">State</span><span class="p">,</span> <span class="nv">reducers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Reducer.html">Reducer</a></span><span class="o">&lt;</span><span class="kt">State</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>initialState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The initial <code>State</code> for the <code>Store</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reducers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code><a href="../Structs/Reducer.html">Reducer</a></code>s to register</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>© 2020 under <a class="link" href="https://github.com/FluxorOrg/Fluxor/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
